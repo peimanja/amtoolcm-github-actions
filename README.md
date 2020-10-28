@@ -1,6 +1,6 @@
-# amomtool GitHub Actions
+# AMToolCM GitHub Actions
 
-amomtool GitHub Actions allow you to check Prometheus Alertmanager config within GitHub Actions.
+AMTool GitHub Actions allow you to check Prometheus Alertmanager config within GitHub Actions.
 
 The output of the actions can be viewed from the Actions tab in the main repository view. If the actions are executed on a pull request event, a comment may be posted on the pull request.
 
@@ -29,7 +29,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Check Prometheus Alertmanager Config
-      uses: peimanja/amtool-github-actions@master
+      uses: peimanja/amtoolcm-github-actions@main
       with:
         amtool_actions_config: 'alertmanager/config.yml'
         amtool_actions_version: '0.21.0'

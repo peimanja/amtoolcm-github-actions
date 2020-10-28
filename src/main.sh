@@ -61,7 +61,7 @@ function main {
   cd ${GITHUB_WORKSPACE}
   installAmtool
   amtoolCheckConfig ${*}
-  esac
+
 }
 
 main "${*}"
