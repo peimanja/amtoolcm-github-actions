@@ -1,0 +1,19 @@
+name: 'amtool GitHub Actions'
+description: 'Runs Prometheus Alertmanager amtool commands via GitHub Actions.'
+author: 'Peiman Jafari'
+branding:
+  icon: 'terminal'
+  color: 'purple'
+inputs:
+  amtool_actions_config:
+    description: 'Path to Alertmanager config file.'
+    required: true
+  amtool_actions_version:
+    description: 'amtool version to install.'
+    default: 'latest'
+  amtool_actions_comment:
+    description: 'Whether or not to comment on pull requests.'
+    default: true
+runs:
+  using: 'docker'
+  image: './Dockerfile'
