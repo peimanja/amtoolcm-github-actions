@@ -5,7 +5,7 @@ function parseInputs {
   if [ "${INPUT_AMTOOL_ACTIONS_CONFIG}" != "" ]; then
     amConfig=${INPUT_AMTOOL_ACTIONS_CONFIG}
   else
-    echo "Input amtool_files cannot be empty"
+    echo "Input amtool_actions_config cannot be empty"
     exit 1
   fi
 
@@ -61,7 +61,7 @@ function main {
   cd ${GITHUB_WORKSPACE}
   installAmtool
   amtoolCheckConfig ${*}
-  esac
+
 }
 
 main "${*}"

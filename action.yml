@@ -1,5 +1,5 @@
-name: 'amtool GitHub Actions'
-description: 'Runs Prometheus Alertmanager amtool commands via GitHub Actions.'
+name: 'AMToolCM GitHub Actions'
+description: 'Runs Prometheus Alertmanager amtool check-config subcommmand via GitHub Actions.'
 author: 'Peiman Jafari'
 branding:
   icon: 'terminal'
