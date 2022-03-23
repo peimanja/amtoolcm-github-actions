@@ -25,7 +25,7 @@ function parseInputs {
 function installAmtool {
   if [[ "${amtoolVersion}" == "latest" ]]; then
     echo "Checking the latest version of Amtool"
-    amtoolVersion=$(git ls-remote --tags --refs --sort="v:refname"  git://github.com/prometheus/alertmanager | grep -v '[-].*' | tail -n1 | sed 's/.*\///' | cut -c 2-)
+    amtoolVersion=$(git ls-remote --tags --refs --sort="v:refname"  https://github.com/prometheus/alertmanager | grep -v '[-].*' | tail -n1 | sed 's/.*\///' | cut -c 2-)
     if [[ -z "${amtoolVersion}" ]]; then
       echo "Failed to fetch the latest version"
       exit 1
